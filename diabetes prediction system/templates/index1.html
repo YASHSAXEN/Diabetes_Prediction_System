@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: aquamarine;
+            background-size: cover;
+
+
+        }
+
+        .heading-1 {
+            text-align: center;
+            margin-top: 15px;
+            color: rgb(6, 6, 7);
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 30px;
+            text-align: center;
+
+        }
+
+        .form {
+            padding: 10px;
+            color: black;
+            font-size: large;
+            font-weight: 500;
+
+        }
+
+        .btn {
+
+            text-decoration: none;
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 7px 5px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: rgb(16, 158, 197);
+            color: black;
+            cursor: pointer;
+        }
+
+        .output {
+            margin-left: -1px;
+            padding: inherit;
+        }
+
+        input {
+            border-radius: 5px;
+            border-style: groove;
+        }
+        #fname{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading-1">Diabtes Prediction System Model in ML</h1>
+
+    <div class="container">
+        <form class="form" action="/predict" , method="post">
+            <p><b> Enter Value in below field </b></p>
+            <input type="text" id="fname" name="value1" value="" required placeholder="Pregnancies"><br><br>
+            <input type="text" id="fname" name="value2" value="" required placeholder="Glucose"><br><br>
+            <input type="text" id="fname" name="value3" value="" required placeholder="BloodPressure"><br><br>
+            <input type="text" id="fname" name="value4" value="" required placeholder="SkinThickness"><br><br>
+            <input type="text" id="fname" name="value5" value="" required placeholder="Insulin"><br><br>
+            <input type="text" id="fname" name="value6" value="" required placeholder="BMI"><br><br>
+            <input type="text" id="fname" name="value7" value="" required
+                placeholder="DiabetesPedigreeFunction"><br><br>
+            <input type="text" id="fname" name="value8" value="" required placeholder="Age"><br><br>
+            <button class="btn">Click to Result</button>
+            <h3 class="output">{{prediction_text}}</h3>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<style>
+    body{
+        background-color :rgb(6 172 172 / 38%);
+    }
+    #box {
+        position: relative;
+        top: 37px;
+        left: 410px;
+    }
+
+    #heading {
+        text-decoration: underline;
+        font-weight: bolder;
+        position: relative;
+        top: 36px;
+        left: 529px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+</style>
+
+<body>
+    <h2 id="heading">Patient Report</h2>
+    <div id="box">
+        <table>
+
+            <tr>
+                <th>Pregnancies</th>
+                <td>{{prediction_text1}}</td>
+            </tr>
+            <tr>
+                <th>Glucose</th>
+                <td>{{prediction_text2}}</td>
+            </tr>
+            <tr>
+                <th>BloodPressure</th>
+                <td>{{prediction_text3}}</td>
+            </tr>
+            <tr>
+                <th>SkinThickness</th>
+                <td>{{prediction_text4}}</td>
+            </tr>
+            <tr>
+                <th>Insulin</th>
+                <td>{{prediction_text5}}</td>
+            </tr>
+            <tr>
+                <th>BMI</th>
+                <td>{{prediction_text6}}</td>
+            </tr>
+            <tr>
+                <th>DiabetesPedigreeFunction</th>
+                <td>{{prediction_text7}}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{prediction_text8}}</td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td><b>{{prediction_text9}}</b></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
